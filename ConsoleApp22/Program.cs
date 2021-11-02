@@ -6,7 +6,10 @@ namespace ConsoleApp22
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Введите Ваше имя.");
+            string name = Console.ReadLine();
+            DateTime dt = DateTime.Now;
+            Console.WriteLine($"Приветствую Вас, {name}! Сегодня {DateTime.Now.ToShortDateString()}, время {dt.ToString("HH:mm")}.");
         }
     }
 }
